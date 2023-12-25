@@ -1,15 +1,18 @@
 ---
-import Layout from "../layouts/Layout.astro";
+const pageTitle = "Home Page";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>Astro is fast</main>
-  <a href="/about/">About</a>
-  <a href="/blog/">Blog</a>
-</Layout>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
 
-<style>
-  main {
-    color: white;
-  }
-</style>
+    <h1>{pageTitle}</h1>
+  </body>
+</html>
